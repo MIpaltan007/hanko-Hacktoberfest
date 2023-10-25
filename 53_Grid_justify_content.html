@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Justify Content</title>
+    <style>
+        .grid-container{
+            display:grid;
+            background-color: blue;
+            padding:10px;
+            grid-template-columns: 50px 50px 50px;
+            justify-content: center;
+            gap:10px;
+        }
+        .grid-container>div{
+            text-align: center;
+            font-size: 30px;
+            background-color: aqua;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Justify Content</h1>
+    <p>Application of <em>justify-content</em> using justify-content:center pushes all the div buckets onto center</p>
+    <div class="grid-container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</body>
+</html>
