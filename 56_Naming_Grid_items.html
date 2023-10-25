@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming Grid Items</title>
+    <style>
+        .item1{
+            grid-area: myArea;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'myArea myArea myArea myArea myArea';
+            padding:10px;
+            padding:10px;
+            background-color:blue;
+        }
+        .grid-container > div{
+            padding:20px 0;
+            background-color: rgba(255,255,255,0.8);
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Naming Grid Items</h1>
+    <p>Using <em>grid-area</em> and <em>grid-template-areas</em> properties to understand the process of naming grid items</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+</body>
+</html>
